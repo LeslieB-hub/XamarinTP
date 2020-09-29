@@ -10,10 +10,10 @@
 
         <ContentView BackgroundColor="#58B0F0">
             <StackLayout Orientation="Horizontal" Margin="10, 25">
-                <ImageButton Source="pencil.png" Aspect="AspectFit" WidthRequest="25"></ImageButton>
+                <ImageButton Source="pencil.png" Aspect="AspectFit" WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
                 <Label Text="Accueil" HorizontalTextAlignment="Center"
                        HorizontalOptions="CenterAndExpand" FontSize="20" FontAttributes="Bold" TextColor="White"></Label>
-                <ImageButton Source="search.png" WidthRequest="25"></ImageButton>
+                <ImageButton Source="search.png" WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
 
             </StackLayout>
         </ContentView>
@@ -25,7 +25,7 @@
             <StackLayout Orientation="Horizontal">
                 <Switch OnColor="LightPink" ThumbColor="HotPink"></Switch>
                 <Label Text="Mémoriser mes informations"
-                       HorizontalTextAlignment="End"></Label>
+                       VerticalOptions="CenterAndExpand"></Label>
             </StackLayout>
             <Button Text="Se connecter" FontAttributes="Bold"></Button>
         </StackLayout>
@@ -53,13 +53,13 @@
                 </StackLayout>
                     <StackLayout    Orientation="Horizontal">
                         <ImageButton Source="reply.png"  HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="CenterAndExpand"></ImageButton>
+                   VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" ></ImageButton>
 
                         <ImageButton Source="retweet.png"  HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="CenterAndExpand" ></ImageButton>
+                   VerticalOptions="CenterAndExpand" BackgroundColor="Transparent"></ImageButton>
 
                         <ImageButton Source="favorite.png"  HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="CenterAndExpand"></ImageButton>
+                   VerticalOptions="CenterAndExpand" BackgroundColor="Transparent"></ImageButton>
                                
                 
                     </StackLayout>
@@ -67,6 +67,7 @@
                                  HorizontalOptions="FillAndExpand">
                     </ContentView>
                 </StackLayout>
+                
             </StackLayout>
         </ScrollView>
 
