@@ -7,29 +7,74 @@
              x:Class="TpMod4.MainPage">
 
     <StackLayout>
-    
-    <StackLayout Orientation="Horizontal" BackgroundColor="#58B0F0" Padding="25">
-        
-        <Label Text="Nouveau" 
+
+        <StackLayout Orientation="Horizontal" BackgroundColor="#58B0F0" Padding="25">
+
+            <Label Text="Nouveau" 
            HorizontalOptions="CenterAndExpand"
            VerticalOptions="CenterAndExpand"
            TextColor="White"/>
-        
-        <Label Text="Accueil"
-               HorizontalOptions="CenterAndExpand"
-               VerticalOptions="CenterAndExpand"
-                TextColor="White"/>
-        
-        <Label Text="Rechercher"
-               HorizontalOptions="CenterAndExpand"
-               VerticalOptions="CenterAndExpand"
-                TextColor="White"/>
-    </StackLayout>
-        
-        
-        
 
+            <Label Text="Accueil"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+                TextColor="White"/>
+
+            <Label Text="Rechercher"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+                TextColor="White"/>
+        </StackLayout>
+
+        <ScrollView Orientation="Vertical"
+                    VerticalOptions="FillAndExpand" 
+                    HorizontalOptions="FillAndExpand">
+            
+            <StackLayout Orientation="Vertical" >
+
+                <StackLayout Orientation="Horizontal" Margin="10">
+                    <BoxView WidthRequest="75" Color="LightSeaGreen"></BoxView>
+                    <StackLayout Orientation="Vertical">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="cédric" HorizontalOptions="Start"/>
+                            <Label Text="cédric@feipofjroe.vf" HorizontalOptions="Start"/>
+                            <Label Text="50 s" TextColor="Gray" HorizontalOptions="End"/>
+                        </StackLayout>
+                        <ContentView>
+                            <Label Text="lorem ipsum gé 'C:\Users\Administrateur\source\repos\TP\TpMod4\TpMod4.UWP\bin\x86\Debug\AppX\System.Xml.XPath.XDocument.dll'. Chargement des symboles ignoré. Le module est optimisé et l'option du débogueur 'Uniquement mon code' est activée.
+        'TpMod4.UWP.exe' (CoreCLR: CoreCLR_UWP_Domain) : Chargé 'C:\Users\Administrateur\source\repos\TP\TpMod4\TpMod4.UWP\bin\x86\Debug\AppX\TpMod4.dll'. Les symboles ont été chargés."/>
+                        </ContentView>
+                    </StackLayout>
+                </StackLayout>
+                
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Répondre" HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"></Label>
+                    <Label Text="Retweet" HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"></Label>
+                    <Label Text="Favoris" HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"></Label>
+                </StackLayout>
+                
+                <BoxView HeightRequest="1" Color="LightGray"></BoxView>
+
+            </StackLayout>
+        </ScrollView>
+
+        <StackLayout Orientation="Horizontal" 
+                     VerticalOptions="EndAndExpand" Padding="20" BackgroundColor="Gray">
+            <Label Text="Fil" HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"></Label>
+            <Label Text="Notifications" HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"></Label>
+            <Label Text="Messages" HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"></Label>
+            <Label Text="Moi" HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"></Label>
+        </StackLayout>
+        
     </StackLayout>
+    
 
 
 
