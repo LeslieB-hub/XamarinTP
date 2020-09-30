@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TpMod6.MainPage">
+
+    <StackLayout>
+
+        <ContentView BackgroundColor="#58B0F0">
+            <StackLayout Orientation="Horizontal" Margin="10, 25">
+                <ImageButton Source="pencil.png" Aspect="AspectFit" WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
+                <Label Text="Accueil" HorizontalTextAlignment="Center"
+                       HorizontalOptions="CenterAndExpand" FontSize="20" FontAttributes="Bold" TextColor="White"></Label>
+                <ImageButton Source="search.png" WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
+
+            </StackLayout>
+        </ContentView>
+
+        <StackLayout x:Name="connectForm" Orientation="Vertical">
+            <Label Text="Connexion à Tweeter" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Label>
+            <Entry x:Name="identifiant" Placeholder="Identifiant tweeter" Keyboard="Text"></Entry>
+            <Entry x:Name="motDePasse" Placeholder="Mot de passe" IsPassword="False" Keyboard="Text"></Entry>
+            <StackLayout Orientation="Horizontal">
+                <Switch x:Name="memoriser" OnColor="LightPink" ThumbColor="HotPink"></Switch>
+                <Label Text="Mémoriser mes informations"
+                       VerticalOptions="CenterAndExpand"></Label>
+            </StackLayout>
+            <Label x:Name="erreur" TextColor="Red"/>
+            <Button x:Name="btnConnecter" Text="Se connecter" FontAttributes="Bold"></Button>
+        </StackLayout>
+
+        <ScrollView x:Name="listeTweets" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout Orientation="Vertical">
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10">
+                        <ContentView Margin="10" WidthRequest="75">
+                            <Image Source="https://picsum.photos/50/50/?random" Aspect="AspectFit"></Image>
+                        </ContentView>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Cedric" TextColor="Black"></Label>
+                                <Label Text="@cedricmillauriaux" TextColor="Gray"></Label>
+                                <Label Text="50s" TextColor="Gray" 
+                                   HorizontalOptions="EndAndExpand"></Label>
+
+                            </StackLayout>
+
+                            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                               Donec euismod convallis dolor. Quisque ultricies porttitor nunc 
+                               venenatis facilisis. " TextColor="Black"></Label>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout    Orientation="Horizontal">
+                        <ImageButton Source="reply.png"  HorizontalOptions="FillAndExpand"
+                   WidthRequest="25" BackgroundColor="Transparent" ></ImageButton>
+
+                        <ImageButton Source="retweet.png"  HorizontalOptions="FillAndExpand"
+                   WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
+
+                        <ImageButton Source="favorite.png"  HorizontalOptions="FillAndExpand"
+                   WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
+
+
+                    </StackLayout>
+                    <ContentView HeightRequest="0.5" BackgroundColor="WhiteSmoke" 
+                                 HorizontalOptions="FillAndExpand">
+                    </ContentView>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+
+        <StackLayout Orientation="Horizontal" 
+                     VerticalOptions="EndAndExpand" Padding="20" BackgroundColor="Gray">
+            <Label Text="Fil" HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"></Label>
+            <Label Text="Notifications" HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"></Label>
+            <Label Text="Messages" HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"></Label>
+            <Label Text="Moi" HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"></Label>
+        </StackLayout>
+
+    </StackLayout>
+
+
+</ContentPage>
