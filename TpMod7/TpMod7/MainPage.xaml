@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="TpMod6.MainPage">
+             x:Class="TpMod7.MainPage">
 
     <StackLayout>
 
@@ -27,11 +27,11 @@
                 <Label Text="Mémoriser mes informations"
                        VerticalOptions="CenterAndExpand"></Label>
             </StackLayout>
-            <Label x:Name="erreur" TextColor="Red"/>
+            <Label x:Name="erreur" IsVisible="False" TextColor="Red"/>
             <Button x:Name="btnConnecter" Text="Se connecter" FontAttributes="Bold" HorizontalOptions="FillAndExpand"></Button>
         </StackLayout>
 
-        <ScrollView x:Name="listeTweets" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <ScrollView x:Name="listeTweets" IsVisible="False" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <StackLayout Orientation="Vertical">
                 <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10">
@@ -40,14 +40,14 @@
                         </ContentView>
                         <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
                             <StackLayout Orientation="Horizontal">
-                                <Label Text="Cedric" TextColor="Black"></Label>
-                                <Label Text="@cedricmillauriaux" TextColor="Gray"></Label>
-                                <Label Text="50s" TextColor="Gray" 
+                                <Label x:Name="utilisateur" Text="Cedric" TextColor="Black"></Label>
+                                <Label x:Name="" Text="@cedricmillauriaux" TextColor="Gray"></Label>
+                                <Label x:Name="dateDeCreation" Text="50s" TextColor="Gray" 
                                    HorizontalOptions="EndAndExpand"></Label>
 
                             </StackLayout>
 
-                            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            <Label x:Name="texte" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                Donec euismod convallis dolor. Quisque ultricies porttitor nunc 
                                venenatis facilisis. " TextColor="Black"></Label>
                         </StackLayout>
@@ -85,6 +85,5 @@
         </StackLayout>
 
     </StackLayout>
-
 
 </ContentPage>
