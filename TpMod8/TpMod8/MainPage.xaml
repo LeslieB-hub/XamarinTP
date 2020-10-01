@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="TpMod7.MainPage">
+             x:Class="TpMod8.MainPage">
 
     <StackLayout>
 
@@ -31,47 +31,13 @@
             <Button x:Name="btnConnecter" Text="Se connecter" FontAttributes="Bold" HorizontalOptions="FillAndExpand"></Button>
         </StackLayout>
 
-        <ScrollView x:Name="listeTweets" IsVisible="False" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-            <StackLayout Orientation="Vertical">
-                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10">
-                        <ContentView Margin="10" WidthRequest="75">
-                            <Image Source="https://picsum.photos/50/50/?random" Aspect="AspectFit"></Image>
-                        </ContentView>
-                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
-                            <StackLayout Orientation="Horizontal">
-                                <Label x:Name="utilisateur" Text="Cedric" TextColor="Black"></Label>
-                                <Label x:Name="pseudo" Text="@cedricmillauriaux" TextColor="Gray"></Label>
-                                <Label x:Name="dateDeCreation" Text="50s" TextColor="Gray" 
-                                   HorizontalOptions="EndAndExpand"></Label>
-
-                            </StackLayout>
-
-                            <Label x:Name="texte" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                               Donec euismod convallis dolor. Quisque ultricies porttitor nunc 
-                               venenatis facilisis. " TextColor="Black"></Label>
-                        </StackLayout>
-                    </StackLayout>
-                    <StackLayout    Orientation="Horizontal">
-                        <ImageButton Source="reply.png"  HorizontalOptions="FillAndExpand"
-                   WidthRequest="25" BackgroundColor="Transparent" ></ImageButton>
-
-                        <ImageButton Source="retweet.png"  HorizontalOptions="FillAndExpand"
-                   WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
-
-                        <ImageButton Source="favorite.png"  HorizontalOptions="FillAndExpand"
-                   WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
-
-
-                    </StackLayout>
-                    <ContentView HeightRequest="0.5" BackgroundColor="WhiteSmoke" 
-                                 HorizontalOptions="FillAndExpand">
-                    </ContentView>
+        <ContentView x:Name="tweetsForm">
+            <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <StackLayout x:Name="listeTweets" IsVisible="False" Orientation="Vertical">
+                    
                 </StackLayout>
-
-            </StackLayout>
-        </ScrollView>
-
+            </ScrollView>
+        </ContentView>
         <StackLayout Orientation="Horizontal" 
                      VerticalOptions="EndAndExpand" Padding="20" BackgroundColor="Gray">
             <Label Text="Fil" HorizontalOptions="CenterAndExpand"
