@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              xmlns:views="clr-namespace:TpMod9.Views"
              xmlns:utils="clr-namespace:TpMod9.Utils"
+             Title="Twitter"
              x:Class="TpMod9.Views.ListeTweets">
     <ContentPage.Content>
         <StackLayout>
@@ -13,7 +14,7 @@
                 <views:Header/>
             </ContentView>
 
-            <ListView x:Name="listeTweets">
+            <ListView x:Name="listeTweets" HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
