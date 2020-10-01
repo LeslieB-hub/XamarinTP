@@ -38,6 +38,7 @@
                 </StackLayout>
             </ScrollView>
         </ContentView>
+        
         <StackLayout Orientation="Horizontal" 
                      VerticalOptions="EndAndExpand" Padding="20" BackgroundColor="Gray">
             <Label Text="Fil" HorizontalOptions="CenterAndExpand"

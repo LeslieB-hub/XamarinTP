@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:views="clr-namespace:TpMod9.Views"
+             x:Class="TpMod9.ConnectForm">
+
+    <StackLayout>
+
+        <ContentView BackgroundColor="#58B0F0">
+            <views:Header/>
+        </ContentView>
+
+        <StackLayout x:Name="connectForm" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Label Text="Connexion à Tweeter" HorizontalTextAlignment="Center"></Label>
+            <Entry x:Name="identifiant" Placeholder="Identifiant tweeter" Keyboard="Text" ReturnType="Next"></Entry>
+            <Entry x:Name="motDePasse" Placeholder="Mot de passe" IsPassword="True" Keyboard="Text" ReturnType="Next"></Entry>
+            <StackLayout Orientation="Horizontal">
+                <Switch x:Name="memoriser" OnColor="LightPink" ThumbColor="HotPink"></Switch>
+                <Label Text="Mémoriser mes informations"
+                       VerticalOptions="CenterAndExpand"></Label>
+            </StackLayout>
+            <Label x:Name="erreur" IsVisible="False" TextColor="Red"/>
+            <Button x:Name="btnConnecter" Text="Se connecter" FontAttributes="Bold" HorizontalOptions="FillAndExpand"></Button>
+        </StackLayout>
+
+
+
+        <ContentView >
+            <views:Footer/>
+        </ContentView>
+
+    </StackLayout>
+
+</ContentPage>
