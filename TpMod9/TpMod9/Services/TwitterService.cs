@@ -47,6 +47,15 @@ namespace TpMod9.Services
                 IdUtilisateur = "666",
                 PseudoUtilisateur = "@lesliePseudoUtilisateur"
             });
+            listeTweets.Add(new Tweet
+            {
+                Identifiant = "lilith",
+                Utilisateur = "lilith",
+                DateDeCreation = "210s",
+                Texte = "Quisque auctor orci a orci posuere, quis sollicitudin urna rutrum. Phasellus pulvinar",
+                IdUtilisateur = "666",
+                PseudoUtilisateur = "@lesliethPseudoUtilisateur"
+            });
             return listeTweets;
         }
     }

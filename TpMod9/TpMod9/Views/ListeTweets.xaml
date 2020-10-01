@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:views="clr-namespace:TpMod9.Views"
+             xmlns:utils="clr-namespace:TpMod9.Utils"
              x:Class="TpMod9.Views.ListeTweets">
     <ContentPage.Content>
         <StackLayout>
@@ -12,59 +13,10 @@
                 <views:Header/>
             </ContentView>
 
-
-            <!--<ScrollView x:Name="listeTweets" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                    <StackLayout  Orientation="Vertical">
-                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
-                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10">
-                                <ContentView Margin="10" WidthRequest="75">
-                                    <Image Source="https://picsum.photos/50/50/?random" Aspect="AspectFit"></Image>
-                                </ContentView>
-                                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
-                                    <StackLayout Orientation="Horizontal">
-                                        <Label x:Name="utilisateur" Text="Cedric" TextColor="Black"></Label>
-                                        <Label x:Name="pseudo" Text="@cedricmillauriaux" TextColor="Gray"></Label>
-                                        <Label x:Name="dateDeCreation" Text="50s" TextColor="Gray" 
-                                           HorizontalOptions="EndAndExpand"></Label>
-
-                                    </StackLayout>
-
-                                    <Label x:Name="texte" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                       Donec euismod convallis dolor. Quisque ultricies porttitor nunc 
-                                       venenatis facilisis. " TextColor="Black"></Label>
-                                </StackLayout>
-                            </StackLayout>
-                            <StackLayout    Orientation="Horizontal">
-                                <ImageButton Source="reply.png"  HorizontalOptions="FillAndExpand"
-                           WidthRequest="25" BackgroundColor="Transparent" ></ImageButton>
-
-                                <ImageButton Source="retweet.png"  HorizontalOptions="FillAndExpand"
-                           WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
-
-                                <ImageButton Source="favorite.png"  HorizontalOptions="FillAndExpand"
-                           WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
-
-
-                            </StackLayout>
-                            <ContentView HeightRequest="0.5" BackgroundColor="WhiteSmoke" 
-                                         HorizontalOptions="FillAndExpand">
-                            </ContentView>
-
-                        </StackLayout>
-                                              
-                    </StackLayout>
-                </ScrollView>-->
-
-
-
             <ListView x:Name="listeTweets">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <ViewCell.ContextActions>
-                                <MenuItem Text="Context Menu Option" />
-                            </ViewCell.ContextActions>
-
                             <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
                                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10">
                                     <ContentView Margin="10" WidthRequest="75">
@@ -83,14 +35,14 @@
                                     </StackLayout>
                                 </StackLayout>
                                 <StackLayout    Orientation="Horizontal">
-                                    <ImageButton Source="reply.png"  HorizontalOptions="FillAndExpand"
-                           WidthRequest="25" BackgroundColor="Transparent" ></ImageButton>
+                                    <ImageButton Source="{utils:ImageFromResources TpMod9.Image.reply.png}"  HorizontalOptions="FillAndExpand"
+                                                WidthRequest="25" BackgroundColor="Transparent" ></ImageButton>
 
-                                    <ImageButton Source="retweet.png"  HorizontalOptions="FillAndExpand"
-                           WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
+                                    <ImageButton Source="{utils:ImageFromResources TpMod9.Image.retweet.png}"  HorizontalOptions="FillAndExpand"
+                                                WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
 
-                                    <ImageButton Source="favorite.png"  HorizontalOptions="FillAndExpand"
-                           WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
+                                    <ImageButton Source="{utils:ImageFromResources TpMod9.Image.favorite.png}"  HorizontalOptions="FillAndExpand"
+                                    WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
 
 
                                 </StackLayout>

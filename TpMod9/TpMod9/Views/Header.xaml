@@ -4,13 +4,14 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             xmlns:utils="clr-namespace:TpMod9.Utils"
              x:Class="TpMod9.Views.Header">
   <ContentView.Content>
         <StackLayout Orientation="Horizontal" Margin="10, 25">
-            <ImageButton Source="pencil.png" Aspect="AspectFit" WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
+            <ImageButton Source="{utils:ImageFromResources TpMod9.Image.pencil.png}" Aspect="AspectFit" WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
             <Label Text="Accueil" HorizontalTextAlignment="Center"
                        HorizontalOptions="CenterAndExpand" FontSize="20" FontAttributes="Bold" TextColor="White"></Label>
-            <ImageButton Source="search.png" WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
+            <ImageButton Source="{utils:ImageFromResources TpMod9.Image.search.png}" WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
 
         </StackLayout>
     </ContentView.Content>
